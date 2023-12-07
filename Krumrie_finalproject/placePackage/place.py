@@ -40,13 +40,13 @@ def groupSentence(group, jsonFile, textFile):
         wordsList.append(cleanWords)
     
     #creates a sentence list pulling the correct words from the text file based on the values for the given key (group)
-    sentance = []
+    sentence = []
     for numeral in groupKey:
-        sentance.append((wordsList[int(numeral)-1]))
+        sentence.append((wordsList[int(numeral)-1]))
     
     #Capitalizes the first letter of the first item in the sentence list
-    sentance[0] = sentance[0].capitalize()
+    sentence[0] = sentence[0].capitalize()
     
     #returns the sentence list as an actual sentence
-    sentanceString = " "
-    return ("Place for our group picture is, \""+sentanceString.join(sentance)+"\".")
+    sentenceString = " "
+    return ("Place for our group picture is, \""+sentenceString.join(sentence)+"\".")
